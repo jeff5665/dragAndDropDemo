@@ -124,8 +124,14 @@ var DragAndDropExample = function () {
             });//类似onEnterFrame
             this.render();
         },
-        render: function () {//onEnterFrame实际执行的函数   清空canvas
-            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+        /**
+         * //todo 增加dirty check 只渲染部分对象 需要考虑清空部分内容
+         * 清空需要一个策略，何时采取局部清空，何时索性完全清空 或者单纯考虑 重绘对象区域的重绘
+         * //
+         */
+        render: function () {//onEnterFrame实际执行的函数
+            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);//清空canvas
             this.renderList.forEach(function (renderObj, index) {
                 renderObj.update();
             })
