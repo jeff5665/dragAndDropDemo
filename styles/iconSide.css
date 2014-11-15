@@ -1,0 +1,46 @@
+div.bls-sidebar-shape{
+	float:left;
+	position:relative;
+}
+#systemPrompt{
+	background-image:url('../images/rectangle.png');
+	margin-left:5px;
+	margin-top:5px;
+ 
+}
+#systemPrompt_icon{
+	background-image:url('../images/rectangle.png');
+	
+	position:absolute;
+}
+
+#userInput{
+	background-image:url('../images/userInput.png');
+	margin-left:5px;
+	margin-top:5px;
+ 
+}
+#userInput_icon{
+	background-image:url('../images/userInput.png');
+	position:absolute;
+}
+#leftSideShape{
+	width:200px;
+	height:600px;
+	border-right:1px solid #bbb;
+	position:relative;
+	padding-left:2px;
+	padding-top:1px;
+	line-height:12px;
+	display:inline-block;
+	background-color: rgb(255, 255, 255);
+}
+.resizeLeftTop{
+	width:15px;
+	height:15px;
+	cursor:se-resize;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:999
+}

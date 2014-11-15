@@ -1,0 +1,38 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+#mainContent{
+	width:600px;
+	height:600px;
+	border:1px solid #9C9898;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAT0lEQVQ4T2N8/fr/fwYiADfPP4avX5gIqmQEGSgqyshISOW373//c3EyE1Q3aiDukBwNQ5xhQ/1kAwpsQomaFHnqu3A06+EM/9GcQr+cAgBGqZrSrFyxegAAAABJRU5ErkJggg==); 
+	background-color: rgb(255, 255, 255);
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+}
+
+.box{
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+
+.shapeCanvas{
+	-webkit-transform(1,0,0,1,0,0);
+	transform:matrix(1,0,0,1,0,0);
+	transform-origin:0px 0px 0px;
+	-webkit-transform-origin:0px 0px;
+	position:absolute;
+	z-index:2;
+}
+
+.shapeDiv{
+	-webkit-transform(1,0,0,1,0,0);
+	transform:matrix(1,0,0,1,0,0);
+	transform-origin:0px 0px 0px;
+	-webkit-transform-origin:0px 0px;
+	position:absolute;
+	z-index:1000;
+}
